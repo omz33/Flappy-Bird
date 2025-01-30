@@ -50,8 +50,8 @@ document.addEventListener('keydown', (event) => {
         }
     }
 });
-document.addEventListener('touchstart', (event) => {
-    event.preventDefault(); // منع السلوك الافتراضي (مثل التمرير)
+document.addEventListener('pointerdown', (event) => {
+    event.preventDefault();
 
     if (!gameStarted) {
         startScreen.style.display = 'none';
@@ -65,7 +65,8 @@ document.addEventListener('touchstart', (event) => {
         bird.velocity = bird.lift;
         playSound(jumpSound);
     }
-}, { passive: false }); // ضمان إمكانية منع السلوك الافتراضي
+}, { passive: false });
+
 
 
 

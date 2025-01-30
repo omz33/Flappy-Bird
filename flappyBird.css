@@ -1,0 +1,93 @@
+/* Flappy Bird css */
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: skyblue;
+    font-family: 'Poppins', sans-serif;
+}
+.start-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 10;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    z-index: 10; /* Ensure it appears above the canvas */
+}
+
+.start-screen button {
+    padding: 15px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.start-screen button:active {
+    background-color: #218838;
+}
+
+canvas {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 100;
+    width: 100vw;
+    height: 100vh;
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.menu button {
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.menu button:active {
+    background-color: #218838;
+}
+.start-screen button {
+    padding: 15px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.start-screen button:active {
+    background-color: #218838;
+}
+
+.difficulty-button {
+    width: 150px;
+}
